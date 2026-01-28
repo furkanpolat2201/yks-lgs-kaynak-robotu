@@ -102,6 +102,15 @@ const ROBOT_DATALARI = {
             "TEMEL DÜZEY": ["Tonguç Dinamo"],
             "ORTA DÜZEY": ["İngilizce Kafası Kafadengi", "Palme Plus", "More and More", "Ahead With English", "Joyfull", "Shall We", "Hız Yayınları", "Fenomen", "Güçlendiren İngilizce Ankara Y.", "Zoom", "Paraf"],
             "İLERİ DÜZEY": ["YDS Publishing", "Team Elt", "Masterclass", "Yanıt Yayınları"]
+            "DİN KÜLTÜRÜ VE AHLAK BİLGİSİ": {
+    "TEMEL DÜZEY": ["Okyanus Yayınları CLASSMATE Soru Bankası", "Tonguç Yayınları Taktikli Soru Bankası"],
+    "ORTA DÜZEY": ["Tonguç Yayınları Dinamo Soru Bankası",
+    "Palme Yayıncılık Konu Anlatımlı",
+    "Tudem Yayınları – Din Kültürü HBA",
+    "Nartest Yayınları – Altın Nokta Mavi Seri Bankası",
+    "Nitelik Yayınları – Süper Soru Kitabı",
+    "Hız Yayınları Soru Bankası"],
+    "İLERİ DÜZEY": ["Bilfen Yayınları –Pro Test Yeni Nesil Soru Bankası","Palme Yayınları – Plus Serisi Yeni Nesil Soru Kitabı"]
         }
     }
 };
