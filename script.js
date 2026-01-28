@@ -61,10 +61,20 @@ const ROBOT_DATALARI = {
             "ORTA DÜZEY": ["Bilgi Sarmal", "3 4 5 Yayınları", "Endemik yayınları", "Metin yayınları", "Mert Hoca AYT Video Ders"],
             "İLERİ DÜZEY": ["3D yayınları", "Acil yayınları", "Orijinal yayınları", "Kaf 3-4", "Apotemi Fasikülleri"]
         },
-        "AYT EDEBİYAT": {
-            "TEMEL DÜZEY": ["Okyanus yay.", "3 4 5 yayınları", "Sınav yayınları", "Kafa dengi yayınları"],
-            "ORTA DÜZEY": ["Yayın Denizi", "Palme", "Editör Konsensus", "Karekök yayınları", "hız ve renk"],
-            "İLERİ DÜZEY": ["Limit yayınları", "Bilgi sarmal", "Arı yayınları", "3D yayınları"]
+"AYT EDEBİYAT": {
+    "TEMEL DÜZEY": ["Okyanus yay.", "3 4 5 yayınları", "Sınav yayınları", "Kafa dengi yayınları"],
+    "ORTA DÜZEY": ["Yayın Denizi", "3 4 5 yayınları", "Palme", "Editör yay. Konsensus", "Karekök yayınları", "hız ve renk"],
+    "İLERİ DÜZEY": ["Limit yayınları", "Bilgi sarmal", "Arı yayınları", "3D yayınları", "Süre"]
+  },
+  "AYT COĞRAFYA": {
+    "TEMEL DÜZEY": ["Okyanus yay."],
+    "ORTA DÜZEY": ["Palme yayıncılık", "3 4 5 Yayınları", "Kafa dengi yayınları", "Lider plus yayınları", "Bilgi sarmal", "Paraf", "Yavuz Tuna AYT El Kitabı", "Yavuz Tuna AYT Soru Bankası"],
+    "İLERİ DÜZEY": ["Limit yayınları", "Karekök yayınları", "Toprak", "3d"]
+  },
+  "AYT TARİH": {
+    "TEMEL DÜZEY": ["Çözüm yayınları", "Eis yayınları 9. sınıf"],
+    "ORTA DÜZEY": ["Ramazan yetkin AYT (eşit) (Video Ders Notu)", "Ramazan yetkin AYT Soru Bankası", "3 4 5 Yayınları", "Yayın denizi", "Palme yayıncılık", "benim hocam", "hız"],
+    "İLERİ DÜZEY": ["Bilgi Sarmal", "Limit yayınları", "Karekök yayınları", "Merkez yayınları", "Paraf"]
         }
     },
     "LGS": {
