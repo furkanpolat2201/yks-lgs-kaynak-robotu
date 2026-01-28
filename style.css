@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 20px;
+    background-color: #e9eff5;
+}
+
+.container {
+    max-width: 600px; margin: 0 auto;
+    background: #ffffff; padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 { color: #007bff; text-align: center; }
+.icon { font-size: 1.2em; color: #28a745; margin: 0 5px; }
+
+h2 {
+    color: #343a40; border-bottom: 2px solid #007bff;
+    padding-bottom: 10px; margin-top: 30px;
+}
+
+label { display: block; margin-top: 15px; font-weight: bold; color: #495057; }
+
+select {
+    width: 100%; padding: 12px; margin-bottom: 20px;
+    border-radius: 8px; border: 1px solid #ced4da;
+    font-size: 16px; background-color: #f8f9fa;
+}
+
+#kaynak-listesi { list-style-type: none; padding: 0; }
+
+#kaynak-listesi li {
+    margin-bottom: 10px; padding: 15px;
+    border-radius: 8px; font-size: 15px;
+}
+
+.kolay-kaynak { background-color: #e6f9e6; border-left: 5px solid #28a745; color: #155724; }
+.orta-kaynak { background-color: #e9f7ff; border-left: 5px solid #007bff; color: #004085; }
+.zor-kaynak { background-color: #fcebeb; border-left: 5px solid #dc3545; color: #721c24; }
+
+#footer-imza {
+    text-align: center; margin-top: 40px; padding: 20px;
+    font-size: 14px; color: #6c757d; border-top: 1px solid #dee2e6;
+}
