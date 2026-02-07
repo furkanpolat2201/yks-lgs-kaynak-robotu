@@ -1,219 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="icon" type="image/png" href="logo.png?v=2">
-
     <title>Rehberlik Koçum Öğrenci Koçluğu</title>
-    <meta name="description" content="YKS LGS Ara Sınıflar Öğrenci Koçluğu. YKS & LGS Kaynak Robotu, LGS tüm Çıkmış Sorular, Ücretsiz Takip Çizelgeleri.">
-    <meta name="keywords" content="öğrenci koçluğu, yks kaynak robotu, lgs rehberlik, furkan polat, tyt takip çizelgesi">
-    <meta name="author" content="Furkan Polat">
-
-    <meta property="og:title" content="Rehberlik Koçum Öğrenci Koçluğu|Furkan Polat">
-    <meta property="og:description" content="Öğrenci koçluğu ve sınav hazırlık sürecine dair her şey.">
-    <meta property="og:url" content="https://rehberlikkocum.com">
-</head>
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rehberlik Koçum Öğrenci Koçluğu</title>
+    
     <style>
-        /* ANA PORTAL TASARIMI */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8fafc;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
+            margin: 0; padding: 0; background-color: #f8fafc;
+            display: flex; flex-direction: column; align-items: center; min-height: 100vh;
         }
 
         header {
-            text-align: center;
-            padding: 50px 20px;
-            background: white;
-            width: 100%;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            margin-bottom: 30px;
+            text-align: center; padding: 50px 20px; background: white;
+            width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px;
         }
 
-        header h1 {
-    color: #1e3c72;
-    margin: 0;
-    font-size: 36px;       /* Biraz daha büyüttük */
-    font-weight: 800;      /* Ekstra kalın (Bold) yaptık */
-    letter-spacing: 1.5px; /* Harf arasını hafif açarak ferahlattık */
-    text-transform: uppercase; /* Tamamı büyük harf olsun, daha kurumsal durur */
-}
-        
-
-        header p {
-            color: #64748b;
-            margin-top: 10px;
-            font-weight: 500;
-        }
+        header h1 { color: #1e3c72; margin: 0; font-size: 32px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; }
+        header p { color: #64748b; margin-top: 10px; font-weight: 500; }
 
         .portal-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            max-width: 1100px;
-            width: 100%;
-            box-sizing: border-box;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px; padding: 20px; max-width: 1100px; width: 100%; box-sizing: border-box;
         }
 
         .p-card {
-            display: flex;
-            align-items: center;
-            padding: 25px;
-            text-decoration: none;
-            color: white;
-            border-radius: 20px;
+            display: flex; align-items: center; padding: 25px;
+            text-decoration: none; color: white; border-radius: 20px;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
 
-        .p-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        /* ÖSYM TURUNCUSU SAYAÇ KARTI */
+        .countdown-card {
+            background: linear-gradient(135deg, #FF8C00, #e67e22) !important;
+            color: white !important;
+            border: none !important;
+            justify-content: space-around;
         }
 
+        .timer-box { text-align: center; flex: 1; }
+        .timer-box span { font-size: 24px; font-weight: 800; display: block; color: white; }
+        .timer-box p { margin: 5px 0 0; font-size: 11px; color: rgba(255,255,255,0.9); font-weight: 700; text-transform: uppercase; }
+        .timer-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.3); }
+
+        .p-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
         .p-icon {
-            background: rgba(255, 255, 255, 0.2);
-            min-width: 70px;
-            height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 18px;
-            margin-right: 20px;
-            font-size: 35px;
+            background: rgba(255, 255, 255, 0.2); min-width: 70px; height: 70px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 18px; margin-right: 20px; font-size: 35px;
         }
 
-        .p-text h3 {
-            margin: 0;
-            font-size: 18px;
-            font-weight: 700;
-        }
-
-        .p-text p {
-            margin: 5px 0 0;
-            font-size: 13px;
-            opacity: 0.9;
-            line-height: 1.4;
-        }
-
-        /* BUTON RENKLERİ */
+        /* RENKLER */
         .robot-bg { background: linear-gradient(135deg, #1e3c72, #2a5298); }
         .shopier-bg { background: linear-gradient(135deg, #e67e22, #d35400); }
         .maarif-bg { background: linear-gradient(135deg, #27ae60, #2ecc71); }
         .tyt-bg { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
-        
-        /* Instagram Turuncu Gradyan */
-        .insta-bg { 
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 40px;
-            text-align: center;
-            color: #94a3b8;
-            font-size: 14px;
-        }
-
-        /* Mobilde ve Tablette Uyumluluk */
-        @media (max-width: 600px) {
-            .portal-grid {
-                grid-template-columns: 1fr;
-            }
-            header h1 { font-size: 24px; }
-        }
+        .lgs-bg { background: linear-gradient(135deg, #e74c3c, #c0392b); }
+        .insta-bg { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
         .kocluk-bg { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
+
+        footer { margin-top: auto; padding: 40px; text-align: center; color: #94a3b8; font-size: 14px; }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 24px; }
+            .portal-grid { grid-template-columns: 1fr; }
+            .timer-box span { font-size: 20px; }
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>REHBERLİK KOÇUM ÖĞRENCİ KOÇLUĞU</h1>
-    <p>Psikolojik Danışman
-        Ayşenur Savrun & Furkan Polat </p>
+    <p>Psikolojik Danışman Ayşenur Savrun & Furkan Polat</p>
 </header>
 
 <div class="portal-grid">
     <a href="kaynak-robotu/index.html" class="p-card robot-bg">
         <div class="p-icon">🤖</div>
-        <div class="p-text">
-            <h3>YKS & LGS KAYNAK ROBOTU</h3>
-            <p>Seviyene en uygun kaynağı saniyeler içinde bul!</p>
-        </div>
+        <div class="p-text"><h3>YKS & LGS KAYNAK ROBOTU</h3><p>Seviyene en uygun kaynağı saniyeler içinde bul!</p></div>
     </a>
 
     <a href="https://www.shopier.com/psikdanfurkanpolat" target="_blank" class="p-card shopier-bg">
         <div class="p-icon">🛒</div>
-        <div class="p-text">
-            <h3>ETKİLEŞİMLİ TAKİP SİSTEMLERİ</h3>
-            <p>Profesyonel takip dosyalarına Shopier üzerinden ulaşın.</p>
-        </div>
+        <div class="p-text"><h3>ETKİLEŞİMLİ TAKİP SİSTEMLERİ</h3><p>Profesyonel takip dosyalarına ulaşın.</p></div>
     </a>
 
     <a href="https://drive.google.com/drive/folders/13TIzyZ0dOnWOvtsH_GwXTsqJnIMRD8P1" target="_blank" class="p-card maarif-bg">
         <div class="p-icon">📈</div>
-        <div class="p-text">
-            <h3>9 - 10. SINIF TAKİP TABLOLARI</h3>
-            <p>Maarif modeline uygun yeni müfredat takip çizelgeleri.</p>
-        </div>
+        <div class="p-text"><h3>9-10. SINIF TABLOLARI</h3><p>Maarif modeline uygun yeni müfredat çizelgeleri.</p></div>
     </a>
 
     <a href="https://drive.google.com/drive/folders/1NwEFpf-jgDYIAl3fOuIQjO3i8cSZwxEm" target="_blank" class="p-card tyt-bg">
         <div class="p-icon">📋</div>
-        <div class="p-text">
-            <h3>TYT - AYT TAKİP TABLOLARI</h3>
-            <p>Üniversite hazırlık sürecini adım adım takip et.</p>
-        </div>
+        <div class="p-text"><h3>TYT-AYT TABLOLARI</h3><p>Üniversite hazırlık sürecini adım adım takip et.</p></div>
     </a>
 
-    <a href="https://drive.google.com/drive/folders/176W-ShcdUJVIUVWgaGqsYrNADAn1cufR?usp=drive_link="target="_blank" class="p-card" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+    <a href="https://drive.google.com/drive/folders/176W-ShcdUJVIUVWgaGqsYrNADAn1cufR" target="_blank" class="p-card lgs-bg">
         <div class="p-icon">📚</div>
-        <div class="p-text">
-            <h3>LGS ÇIKMIŞ SORULAR</h3>
-            <p>2021-2025 Yılları arası çıkmış tüm LGS soruları ve cevapları (MEB).</p>
-        </div>
+        <div class="p-text"><h3>LGS ÇIKMIŞ SORULAR</h3><p>2021-2025 Arası tüm sorular ve cevaplar.</p></div>
     </a>
 
     <a href="https://www.instagram.com/rehberlik_kocum" target="_blank" class="p-card insta-bg">
-    <div class="p-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-        </svg>
-    </div>
-    <div class="p-text">
-        <h3>BİZİ TAKİP EDİN</h3>
-        <p>Güncel rehberlik içerikleri ve motivasyon paylaşımları.</p>
-    </div>
-</a>
-
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSefdBpXkMtqEuiRCCKzo7kwtUiUpoOmG-MFgjX8ltztKzu1NA/viewform?usp=dialog" target="_blank" class="p-card kocluk-bg">
-        <div class="p-icon">✍️</div>
-        <div class="p-text">
-            <h3>YKS KOÇLUK BAŞVURU FORMU</h3>
-            <p>Birebir koçluk süreci için başvuru yapın.</p>
-        </div>
+        <div class="p-icon">📸</div>
+        <div class="p-text"><h3>BİZİ TAKİP EDİN</h3><p>Güncel rehberlik içerikleri ve motivasyon.</p></div>
     </a>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSefdBpXkMtqEuiRCCKzo7kwtUiUpoOmG-MFgjX8ltztKzu1NA/viewform" target="_blank" class="p-card kocluk-bg">
+        <div class="p-icon">✍️</div>
+        <div class="p-text"><h3>YKS KOÇLUK BAŞVURU</h3><p>Birebir koçluk süreci için başvuru yapın.</p></div>
+    </a>
+
+    <div class="p-card countdown-card">
+        <div class="timer-box">
+            <span id="lgs-days">--</span>
+            <p>LGS'ye Kalan</p>
+        </div>
+        <div class="timer-divider"></div>
+        <div class="timer-box">
+            <span id="yks-days">--</span>
+            <p>YKS'ye Kalan</p>
+        </div>
+    </div>
 </div>
 
-<footer>
-    © 2026 rehberlikkocum.com | Tüm Hakları Saklıdır.<br>
-    Psikolojik Danışman Furkan Polat
-</footer>
+<footer>© 2026 rehberlikkocum.com | Furkan Polat</footer>
 
+<script>
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const lgsDate = new Date("June 1, 2026").getTime();
+        const yksDate = new Date("June 20, 2026").getTime();
+        const lgsDiff = lgsDate - now;
+        const yksDiff = yksDate - now;
+        document.getElementById("lgs-days").innerText = Math.max(0, Math.floor(lgsDiff / 86400000)) + " GÜN";
+        document.getElementById("yks-days").innerText = Math.max(0, Math.floor(yksDiff / 86400000)) + " GÜN";
+    }
+    updateCountdown();
+</script>
 </body>
 </html>
