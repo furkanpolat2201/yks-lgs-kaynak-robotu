@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
             },
             "MATEMATİK": {
                 "TEMEL DÜZEY": ["Matematix", "Fenomen Matematik Fasikülleri*", "Arı Matematik", "Nartest İlk Adım", "Antrenmanlarla Matematik"],
-                "ORTA DÜZEY": ["Ephesus","Okyanus Check Et", "Paraf IQ", "Strateji Bam Bam", "Hız Yayınları*", "Tonguç", "Çanta Yayınları", "Fenomen A"],
-                "İLERİ DÜZEY": ["Tudem", "Newton All Star", "Bilfen-ProBil", "Okyanus Master", "Fenomen B", "Sinan Kuzucu"]
+                "ORTA DÜZEY": ["İşleyen Zeka","Ephesus","Okyanus Check Et", "Paraf IQ", "Strateji Bam Bam", "Hız Yayınları*", "Tonguç", "Çanta Yayınları", "Fenomen A",],
+                "İLERİ DÜZEY": ["Son Viraj Formula Matematik","Tudem", "Newton All Star", "Bilfen-ProBil", "Okyanus Master", "Fenomen B", "Sinan Kuzucu"]
             },
             "FEN BİLİMLERİ": {
                 "TEMEL DÜZEY": ["Süper A Akademi Nitelik Y.", "Bilfen Yayınları"],
