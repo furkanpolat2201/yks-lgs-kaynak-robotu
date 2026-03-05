@@ -14,9 +14,43 @@
         }
 
         header {
-            text-align: center; padding: 50px 20px; background: white;
-            width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 25px;
-        }
+    display: flex;
+    justify-content: center; /* Ortalar */
+    align-items: center;
+    padding: 30px 20px; /* Biraz daralttık logo gelince kaba durmasın */
+    background: white;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Logo ile yazı arasındaki boşluk */
+    max-width: 1100px;
+}
+
+.header-logo {
+    width: 80px; /* Logonun büyüklüğünü buradan ayarla */
+    height: auto;
+    border-radius: 12px; /* Eğer logon kareyse köşelerini hafif yumuşatır */
+}
+
+.header-text {
+    text-align: center;     /* H1 ve P etiketlerini kendi içinde ortalar */
+}
+
+/* Mobilde logoyu üste, yazıyı alta almak için */
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text {
+        text-align: center;
+    }
+}
 
         header h1 { color: #1e3c72; margin: 0; font-size: 32px; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; }
         header p { color: #64748b; margin-top: 10px; font-weight: 500; }
@@ -74,8 +108,13 @@
 <body>
 
 <header>
-    <h1>REHBERLİK KOÇUM ÖĞRENCİ KOÇLUĞU</h1>
-    <p>Psikolojik Danışman Ayşenur Savrun & Furkan Polat</p>
+    <div class="header-content">
+        <img src="logo.png" alt="Rehberlik Koçum Logo" class="header-logo">
+        <div class="header-text">
+            <h1>REHBERLİK KOÇUM ÖĞRENCİ KOÇLUĞU</h1>
+            <p>Psikolojik Danışman Ayşenur Savrun & Furkan Polat</p>
+        </div>
+    </div>
 </header>
 
 <div class="portal-grid">
