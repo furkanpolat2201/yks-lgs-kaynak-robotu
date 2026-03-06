@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 "İLERİ DÜZEY": ["Sinan Kuzucu*", "Okyanus Master Paragraf", "Hız*", "Fenomen", "Nartest Kırmızı"]
             },
             "MATEMATİK": {
-                "TEMEL DÜZEY": ["Matematix", "Fenomen Matematik Fasikülleri*", "Arı Matematik", "Nartest İlk Adım", "Antrenmanlarla Matematik"],
+                "TEMEL DÜZEY": [" Full Matematik Yayınları","Matematix", "Fenomen Matematik Fasikülleri*", "Arı Matematik", "Nartest İlk Adım", "Antrenmanlarla Matematik"],
                 "ORTA DÜZEY": ["İşleyen Zeka","Ephesus","Okyanus Check Et", "Paraf IQ", "Strateji Bam Bam", "Hız Yayınları*", "Tonguç", "Çanta Yayınları", "Fenomen A",],
                 "İLERİ DÜZEY": ["Son Viraj Formula Matematik","Tudem", "Newton All Star", "Bilfen-ProBil", "Okyanus Master", "Fenomen B", "Sinan Kuzucu"]
             },
