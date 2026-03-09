@@ -1,1 +1,99 @@
+/* Google Fonts - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8fafc;
+    margin: 0;
+    padding: 0;
+    color: #334155;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Geri Dön Butonu */
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #764ba2;
+    font-weight: 600;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+/* Liste Başlığı */
+.blog-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blog-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+/* Yazı Kartları */
+.blog-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid #edf2f7;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.post-card h2 {
+    margin: 0 0 10px 0;
+    color: #1e3c72;
+    font-size: 22px;
+}
+
+.post-card p {
+    margin: 0;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    color: #764ba2;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Yazı Detay Sayfası Ayarları */
+article h1 {
+    font-size: 36px;
+    color: #1e3c72;
+    line-height: 1.2;
+}
+
+.article-content {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 30px;
+}
